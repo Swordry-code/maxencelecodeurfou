@@ -1,74 +1,57 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Hello World!</title>
-    <LINK rel=STYLESHEET href="lecodeurfou.css" type="text/css">
-</head>
+<!--The HTML, CSS, and JS is not offical. Source: http://2048game.com/ -->
+  <div class="heading">
+  <h1 class="title"><a href="/">2048</a></h1>
+  <div class="scores-container">
+    <div class="score-container">0</div>
+    <div class="best-container">2960</div>
+  </div>
+</div>
+<div class="game-intro">
+  <a class="restart-button">New Game</a>
+  <h2 class="subtitle">Play <strong>2048 Game</strong> Online</h2>
+  <div class="above-game">
+    <p>Join the numbers and get to the <strong>2048 tile!</strong></p>
+  </div>
+</div>
 
-<body>
-
-  <div class="container">
-    <div class="heading">
-      <h1 class="title">2048</h1>
-      <div class="score-container">0</div>
-    </div>
-    <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
-
-    <div class="game-container">
-      <div class="game-message">
-        <p></p>
-        <div class="lower">
-          <a class="retry-button">Try again</a>
-        </div>
-      </div>
-
-      <div class="grid-container">
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-      </div>
-
-      <div class="tile-container">
-
+<div class="game-container">
+  <div class="game-message">
+    <p></p>
+    <div class="lower">
+      <a class="keep-playing-button">Keep playing</a>
+      <a class="retry-button">Try again</a>
+      <div class="score-sharing">
       </div>
     </div>
-
-    <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two
-      tiles with the same number touch, they <strong>merge into one!</strong>
-    </p>
-    <hr>
-    <p>
-      Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a
-        href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually
-      similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
-    </p>
   </div>
 
-  <script src="apprendre.js">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+    </div>
+    <div class="grid-row">
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+    </div>
+    <div class="grid-row">
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+    </div>
+    <div class="grid-row">
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+      <div class="grid-cell"></div>
+    </div>
+  </div>
 
-  </script>
-
-</body>
-</html>
+  <div class="tile-container"><div class="tile tile-4 tile-position-3-4 tile-new"><div class="tile-inner">4</div></div><div class="tile tile-2 tile-position-4-1 tile-new"><div class="tile-inner">2</div></div></div>
+</div>
