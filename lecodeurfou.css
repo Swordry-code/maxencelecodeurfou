@@ -1,5 +1,15 @@
 body {
     font-family: 'Quicksand';
+    background-image: url("wallpaper.png");
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    border: outset #f44336;
+    border-radius: 5px;
+    margin-top: 0;
+    background-color: #f44336;
 }
 
 .conteneur {
@@ -16,6 +26,11 @@ body {
     justify-content: space-around;
     width:200px;
     align-items: center;
+}
+
+.bouttons button {
+    background-color: #f44336;
+    border: outset #f44336;
 }
 
 .bouttons img {
@@ -50,7 +65,10 @@ body {
 }
 
 .historique {
-    background-color: yellow;
+    background-color: #00ae41;
+    color: white;
+    border: outset #DCE342;
+    border-radius: 5px;
     width: 200px;
     display: flex;
     flex-direction: column;
