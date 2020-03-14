@@ -3,33 +3,45 @@
 <head>
     <meta charset="utf-8">
     <title>Pierre Feuille Ciseaux</title>
-    <link rel="stylesheet" href="lecodeurfou.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli&family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <h1 id="titre">Pierre Feuille Ciseaux</h1>
-
-    <br>
-    <button id="pierre"><img id="img1" src="files/pierre.png" alt="pierre"></button>
-
-    <div id="choixUtilisateur"></div>
-    <p id="vs">VS</p>
-    <div id="choixIA"></div>
-
-    <br>
-    <button id="feuille"><img id="img1" src="files/feuille.png" alt="feuille"></button>
-    <br>
-    <button id="ciseaux"><img id="img1" src="files/ciseaux.png" alt="ciseaux"></button>
-
-    <p id="regles">Règles :</p>
-
-    <ul>
-        <li><img id="img2" src="files/pierre.png" alt="Pierre"> > <img id="img2" src="files/ciseaux.png" alt="Ciseaux"></li>
-        <li><img id="img2" src="files/ciseaux.png" alt="Ciseaux"> > <img id="img2" src="files/feuille.png" alt="Feuille"></li>
-        <li><img id="img2" src="files/feuille.png" alt="Feuille"> > <img id="img2" src="files/pierre.png" alt="Pierre"></li>
-    </ul>
+    <div class="conteneur">
+        <div class="bouttons">
+            <button id="pierre"><img src="files/pierre.png"></button>
+            <button id="feuille"><img src="files/feuille.png"></button>
+            <button id="ciseaux"><img src="files/ciseaux.png"></button>
+        </div>
+        <div class="affichage">
+            <div class="affichageImage">
+                <img src="files/white.png">
+                <img id="vs" src="files/vs.png" style="display: none;">
+                <img src="files/white.png">
+            </div>
+            <p>0 - 0</p>
+            <p id="resultat"></p>
+        </div>
+        <div class="historique">
+            <h2>Historique :</h2>
+            <div class="affichageHistorique">
+                <p>Joueur : Pierre<br>
+                Robot : Ciseaux<br>
+                1-0</p>
+                <p>Joueur : Pierre<br>
+                Robot : Ciseaux<br>
+                1-0</p>
+                <p>Joueur : Pierre<br>
+                Robot : Ciseaux<br>
+                1-0</p>
+                <p>Joueur : Pierre<br>
+                Robot : Ciseaux<br>
+                1-0</p>
+            </div>
+        </div>
+    </div>
 
 </body>
-<script src="apprendre.js"></script>
+<script src="js/script.js"></script>
 </html>

@@ -1,26 +1,31 @@
-var buttons = document.querySelectorAll("button");
-var resultat = "";
+var bouttons = document.querySelectorAll("div.conteneur > div.bouttons > button");
+var resultat = document.getElementById('resultat')
+var ptsJoueur
 
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener('click', function() {
-    const joueur = buttons[i].id;
-    const IA = buttons[Math.floor(Math.random() * buttons.length)].id;
+for (let i = 0; i < bouttons.length; i++) {
+  bouttons[i].addEventListener('click', function() {
+    const joueur = bouttons[i].id;
+    console.log(joueur);
+    const IA = bouttons[Math.floor(Math.random() * bouttons.length)].id;
 
-    var imageperso = document.querySelectorAll("div");
-    imageperso[0].innerHTML = "<img id=\"img3\" src=\"files/"+joueur+".png\"></img>"
-    imageperso[1].innerHTML = "<img id=\"img3\" src=\"files/"+IA+".png\"></img>"
-
+    var imageperso = document.querySelectorAll("div.conteneur > div.affichage > div.affichageImage > img");
+    imageperso[0].src = "files/"+joueur+".png";
+    imageperso[2].src = "files/"+IA+".png";
     if (joueur == IA) {
-        resultat = "égalité";
+        resultat.innerHTML = "Egalité";
     }
 
-    else if ((joueur === "Pierre" && robot === "Ciseaux") || (joueur === "Ciseaux" && robot === "Feuilles") || (joueur === "Feuilles") && (robot === "Pierre")) {
-        resultat = "gagné";
+    else if ((joueur === "pierre" && IA === "ciseaux") || (joueur === "ciseaux" && IA === "feuille") || (joueur === "feuille") && (IA === "pierre")) {
+        resultat.innerHTML = "Gagné";
     }
 
     else {
-        resultat = "perdu";
+        resultat.innerHTML = "Perdu";
     }
+
+    vs = document.getElementById('vs')
+    vs.style.display = "block";
+
   })
 
 }
