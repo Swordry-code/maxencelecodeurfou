@@ -11,9 +11,8 @@ for (let i = 0; i < bouttons.length; i++) {
     console.log(joueur);
     const IA = bouttons[Math.floor(Math.random() * bouttons.length)].id;
 
-    var imageperso = document.querySelectorAll("div.conteneur > div.affichage > div.affichageImage > img");
-    imageperso[0].src = "files/"+joueur+".png";
-    imageperso[2].src = "files/"+IA+".png";
+    var imageperso = document.querySelector("div.conteneur > div.affichage > div.affichageImage");
+    imageperso.innerHTML = "<img src = \"files/"+joueur+".png\"> <img id=\"vs\" src=\"files/vs.png\"> <img src=\"files/"+IA+".png\">";
     if (joueur == IA) {
         resultat.innerHTML = "Egalité";
     }
@@ -27,9 +26,6 @@ for (let i = 0; i < bouttons.length; i++) {
         resultat.innerHTML = "Perdu";
         ptsIA += 1;
     }
-
-    var vs = document.getElementById('vs')
-    vs.style.display = "block";
 
     var score = document.getElementById('score')
     score.innerHTML = ptsJoueur+" - "+ptsIA;

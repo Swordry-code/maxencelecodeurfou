@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Pierre Feuille Ciseaux</title>
-    <link rel="stylesheet" href="lecodeurfou.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli&family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,9 +16,6 @@
         </div>
         <div class="affichage">
             <div class="affichageImage">
-                <img src="files/white.png">
-                <img id="vs" src="files/vs.png" style="display: none;">
-                <img src="files/white.png">
             </div>
             <p id="score"></p>
             <p id="resultat"></p>
@@ -34,6 +31,15 @@
         </div>
     </div>
 
+    <br>
+
+    <h3>Règles :</h3>
+    <ul>
+        <li><img src="files/pierre.png"> > <img src="files/ciseaux.png"></li>
+        <li><img src="files/feuille.png"> > <img src="files/pierre.png"></li>
+        <li><img src="files/ciseaux.png"> > <img src="files/feuille.png"></li>
+    </ul>
+
 </body>
-<script src="apprendre.js"></script>
+<script src="js/script.js"></script>
 </html>

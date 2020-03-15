@@ -78,3 +78,22 @@ h1 {
     justify-content: flex-start;
     align-items: center;
 }
+
+li {
+    font-size: xx-large;
+}
+
+li img {
+    width: 30px;
+    height: 30px;
+}
+
+h3 {
+    margin-left: 10px;
+    font-size: xx-large;
+}
+
+#pgq {
+    width:30px;
+    height: 30px;
+}
