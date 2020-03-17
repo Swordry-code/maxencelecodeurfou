@@ -3,11 +3,16 @@
 <head>
     <meta charset="utf-8">
     <title>Pierre Feuille Ciseaux</title>
-    <link rel="stylesheet" href="lecodeurfou.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="files/icone.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Muli&family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Pierre Feuille Ciseaux</h1>
+    <div class="joueur">
+        <h2 class="element">Joueur</h2>
+        <h2 class="element">Robot</h2>
+    </div>
     <div class="conteneur">
         <div class="bouttons">
             <button id="pierre"><img src="files/pierre.png"></button>
@@ -32,14 +37,18 @@
     </div>
 
     <br>
-
-    <h3>Règles :</h3>
-    <ul>
-        <li><img src="files/pierre.png"> > <img src="files/ciseaux.png"></li>
-        <li><img src="files/feuille.png"> > <img src="files/pierre.png"></li>
-        <li><img src="files/ciseaux.png"> > <img src="files/feuille.png"></li>
-    </ul>
-
+    <div class="basDePage">
+        <div class="regles">
+            <h3>Règles :</h3>
+            <ul>
+                <li><img src="files/pierre.png"> > <img src="files/ciseaux.png"></li>
+                <li><img src="files/feuille.png"> > <img src="files/pierre.png"></li>
+                <li><img src="files/ciseaux.png"> > <img src="files/feuille.png"></li>
+            </ul>
+        </div>
+        <img onclick="window.top.window.scrollTo(0,0);" class="remonter" src="files/haut.png">
+        <p>Bonne chance <img src="files/bonnechance.png"></p>
+    </div>
 </body>
-<script src="apprendre.js"></script>
+<script src="js/script.js"></script>
 </html>

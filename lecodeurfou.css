@@ -1,18 +1,33 @@
 body {
     font-family: 'Quicksand';
-    background-image: url("wallpaper.png");
-    color: white;
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    background-size: cover;
+    color: black;
+    background-color: #e2e2e2;
 }
 
 h1 {
     text-align: center;
-    border: outset #f44336;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 5px;
-    margin-top: 0;
-    background-color: #f44336;
+    background-color: #ffffff;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.joueur {
+    display: flex;
+    justify-content: space-around;
+}
+
+.element:nth-child(1) {
+    margin-left: 200px;
+    visibility: hidden;
+}
+
+.element:nth-child(2) {
+    margin-right: 200px;
+    visibility: hidden;
 }
 
 .conteneur {
@@ -32,8 +47,9 @@ h1 {
 }
 
 .bouttons button {
-    background-color: #f44336;
-    border: outset #f44336;
+    background-color: #ffffff;
+    border: outset #ffffff;
+    border-radius: 5px;
 }
 
 .bouttons img {
@@ -42,6 +58,7 @@ h1 {
 }
 
 .affichage {
+    border-radius: 5px;
     width: 350px;
     height: 250px;
     display: flex;
@@ -68,9 +85,8 @@ h1 {
 }
 
 .historique {
-    background-color: #00ae41;
-    color: white;
-    border: outset #DCE342;
+    background-color: #ffffff;
+    color: black;
     border-radius: 5px;
     width: 200px;
     display: flex;
@@ -93,7 +109,36 @@ h3 {
     font-size: xx-large;
 }
 
-#pgq {
-    width:30px;
-    height: 30px;
+
+.basDePage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    /* background-color: #ffffff; */
+}
+
+.regles {
+    margin-left: 20px;
+}
+
+.regles img {
+    vertical-align: text-bottom;
+}
+
+.remonter {
+    width: 75px;
+    height: 75px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.basDePage p {
+    align-self: flex-end;
+}
+
+.basDePage p img {
+    width: 25px;
+    height: 25px;
+    vertical-align: text-bottom;
 }

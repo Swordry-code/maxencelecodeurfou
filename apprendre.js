@@ -27,8 +27,14 @@ for (let i = 0; i < bouttons.length; i++) {
         ptsIA += 1;
     }
 
-    var score = document.getElementById('score')
-    score.innerHTML = ptsJoueur+" - "+ptsIA;
+    document.getElementById('score').innerHTML = ptsJoueur+" - "+ptsIA;
+
+    element = document.querySelectorAll(".element")
+
+    for (let i = 0; i < element.length; i++) {
+        element[i].style.visibility = "visible"
+    }
+
 
     historique[3].innerHTML = historique[2].innerHTML
     historique[2].innerHTML = historique[1].innerHTML
