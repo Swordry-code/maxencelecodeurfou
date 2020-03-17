@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Pierre Feuille Ciseaux</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="files/feuille.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Muli&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img class="logo" src="files/logo.jpg">
+    <h1>Pierre - Feuille - Ciseaux</h1>
+    <div class="joueur">
+        <h2 class="element">Joueur</h2>
+        <h2 class="element">Robot</h2>
+    </div>
+    <div class="conteneur">
+        <div class="bouttons">
+            <button id="pierre"><img src="files/pierre.png"></button>
+            <button id="feuille"><img src="files/feuille.png"></button>
+            <button id="ciseaux"><img src="files/ciseaux.png"></button>
+        </div>
+        <div class="affichage">
+            <div class="affichageImage">
+            </div>
+            <p id="score"></p>
+            <p id="resultat"></p>
+        </div>
+        <div class="historique">
+            <h2>Historique :</h2>
+            <div class="affichageHistorique">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="basDePage">
+        <div class="regles">
+            <h3>Règles :</h3>
+            <ul>
+                <li><img src="files/pierre.png"> > <img src="files/ciseaux.png"></li>
+                <li><img src="files/feuille.png"> > <img src="files/pierre.png"></li>
+                <li><img src="files/ciseaux.png"> > <img src="files/feuille.png"></li>
+            </ul>
+        </div>
+        <img onclick="window.top.window.scrollTo(0,0);" class="remonter" src="files/haut.png">
+        <p>Bonne chance <img src="files/bonnechance.png"></p>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
