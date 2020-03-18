@@ -1,0 +1,151 @@
+body {
+    font-family: 'Quicksand';
+    color: black;
+    background-color: #e2e2e2;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.logo {
+    width: 146.4px;
+    height:78px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.joueur {
+    display: flex;
+    justify-content: space-around;
+}
+
+.element:nth-child(1) {
+    margin-left: 200px;
+    visibility: hidden;
+}
+
+.element:nth-child(2) {
+    margin-right: 200px;
+    visibility: hidden;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.bouttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:200px;
+    align-items: center;
+}
+
+.bouttons button {
+    background-color: #ffffff;
+    border: outset #ffffff;
+    border-radius: 5px;
+}
+
+.bouttons img {
+    width: 50px;
+    height: 50px;
+}
+
+.affichage {
+    border-radius: 5px;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+}
+
+
+.affichage p {
+    font-size: xx-large;
+}
+
+.affichageImage {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.affichageImage img {
+    width: 75px;
+    height: 75px;
+}
+
+.historique {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 5px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+li {
+    font-size: xx-large;
+}
+
+li img {
+    width: 30px;
+    height: 30px;
+}
+
+h3 {
+    margin-left: 10px;
+    font-size: xx-large;
+}
+
+
+.basDePage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    /* background-color: #ffffff; */
+}
+
+.regles {
+    margin-left: 20px;
+}
+
+.regles img {
+    vertical-align: text-bottom;
+}
+
+.remonter {
+    width: 75px;
+    height: 75px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.basDePage p {
+    align-self: flex-end;
+}
+
+.basDePage p img {
+    width: 25px;
+    height: 25px;
+    vertical-align: text-bottom;
+}
